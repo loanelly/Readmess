@@ -1,0 +1,20 @@
+---
+
+## 🧹 Чистота репозитория
+Проект полностью избавлен от мусора. В репозиторий включен настроенный файл `.gitignore`, который автоматически блокирует кэш Python (`__pycache__`), временные файлы сред разработки (IDLE, VS Code) и системные логи Windows.
+
+---
+
+## 📄 Лицензия
+Проект распространяется под свободной лицензией **MIT**. Вы можете добавлять свои текстуры, препятствия или звуковые эффекты, свободно использовать, модифицировать и распространять данный код.
+
+---
+
+<p align="center">
+  Сделано с ❤️ руками <a href="https://github.com/loanelly">loanelly</a>.
+</p>
+
+<p align="center">
+  <img src="https://github.com/loanelly/Readmess/blob/main/SomeCstGifs/cute-cat-cat-on-throne.webp" height="42" valign="middle"/>
+</p>
+<div align="center">
