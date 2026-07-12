@@ -30,3 +30,16 @@ junction) cannot be simulated.
 */
 // TOGGLE SWITCH / ПЕРЕКЛЮЧАТЕЛЬ РЕЖИМОВ
 // Set to true for Wokwi simulation. Set to false for real hardware assembly.
+
+
+
+
+https://wokwi.com/projects/469345848377569281
+
+
+
+
+
+
+
+
