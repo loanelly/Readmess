@@ -1,1 +1,32 @@
+// ============================================================================
+// PROJECT: LNL-EntropyShield (True Random Number Generator)
+// ORGANIZATION: LNL-Engineering (https://github.com/LNL-Engineering)
+// ============================================================================
+/* 
+==============================================================================
+[EN] WHY DO WE NEED THIS TOGGLE (WOKWI_EMULATION_MODE)?
+Wokwi is a pure digital simulator. In a virtual environment, an unconnected analog 
+pin or timer runs on deterministic math, resulting in predictable patterns (like 
+repeating 0x55 or 0xAA bytes). Real physical entropy (thermal/shot noise of a p-n 
+junction) cannot be simulated. 
 
+- Set to 'true' (Wokwi Mode): Uses a software-generated random bit source to pass 
+  through the Von Neumann filter, preventing infinite loops and ensuring active output.
+- Set to 'false' (Production Mode): Disables software crutches. The code relies 
+  strictly on the true quantum randomness of a real hardware transistor noise generator.
+
+==============================================================================
+[RU] ЗАЧЕМ НУЖЕН ЭТОТ ПЕРЕКЛЮЧАТЕЛЬ (WOKWI_EMULATION_MODE)?
+Симулятор Wokwi имеет чисто цифровую природу. В виртуальной среде неподключенный 
+аналоговый пин или таймер работают по строгим математическим формулам, что приводит 
+к циклическим повторам или зависанию алгоритма фон Неймана в бесконечном цикле. 
+Реальную физическую энтропию (тепловой шум транзистора) невозможно смоделировать программно.
+
+- Режим 'true' (Для Wokwi): Подает на вход фильтра фон Неймана программные случайные 
+  биты, что предотвращает зависание симулятора и оживляет монитор порта.
+- Режим 'false' (Для реального железа): Полностью отключает программные "костыли". 
+  Код опирается исключительно на истинный квантовый хаос физического транзистора.
+==============================================================================
+*/
+// TOGGLE SWITCH / ПЕРЕКЛЮЧАТЕЛЬ РЕЖИМОВ
+// Set to true for Wokwi simulation. Set to false for real hardware assembly.
